@@ -41,29 +41,20 @@ var scoreElement = document.getElementById("scoreVal");
 var startButton = document.getElementById("startBtn");
 var timerElement = document.getElementById("timer");
 
-// Shuffle an array and ensure the correct answer is included
-function shuffleArrayWithCorrectAnswer(array, correctAnswer) {
-    var shuffledArray = array.slice(); // Create a copy of the original array
-
-    // Ensure correct answer is in the shuffled array
-    if (!shuffledArray.includes(correctAnswer)) {
-        var randomIndex = Math.floor(Math.random() * shuffledArray.length);
-        shuffledArray[randomIndex] = correctAnswer;
-    }
-
-    // Perform Fisher-Yates shuffle for the rest of the elements
-    var currentIndex = shuffledArray.length, temporaryValue, randomIndex;
+//function to shuffle an array
+function shuffleArray(array) {
+    var currentIndex = array.length, randomIndex, temporaryValue;
 
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
 
-        temporaryValue = shuffledArray[currentIndex];
-        shuffledArray[currentIndex] = shuffledArray[randomIndex];
-        shuffledArray[randomIndex] = temporaryValue;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
     }
 
-    return shuffledArray;
+    return array;
 }
 
 //function to load a new question
@@ -72,8 +63,8 @@ function loadQuestion() {
     if (currentQuestion < fruits.length) {
         var fruit = fruits[currentQuestion];
 
-        // Shuffle the options array with correct answer
-        var shuffledOptions = shuffleArrayWithCorrectAnswer(fruit.options, fruit.options[0]);
+        // Shuffle the options array
+        var shuffledOptions = shuffleArray(fruit.options);
 
         //to set the fruit image and shuffled options
         fruitImage.src = "images/" + fruit.image;
@@ -88,13 +79,12 @@ function loadQuestion() {
     }
 }
 
-
 //finish the quiz and redirect to the final score page
 function finishQuiz() {
     localStorage.setItem('finalScore', score);
 
     timerElement.style.display = "none";
-    window.location.href = "http://127.0.0.1:5503/finalscore.html";
+    window.location.href = "http://127.0.0.1:5503/finalscores\.html";
 }
 
 //function to display the question and start the timer
@@ -186,3 +176,4 @@ startButton.addEventListener("click", startGame);
 option1.addEventListener("click", () => checkAnswer(option1.textContent));
 option2.addEventListener("click", () => checkAnswer(option2.textContent));
 option3.addEventListener("click", () => checkAnswer(option3.textContent));
+
