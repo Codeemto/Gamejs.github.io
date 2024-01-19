@@ -14,7 +14,7 @@ $("#btn").on("click", function () {
 
 //function to redirect to the levels page when the game starts
 function playGame() {
-    window.location.href = "http://127.0.0.1:5503/levels.html";
+    window.location.href = "https://codeemto.github.io/levels.html";
 }
 
 //array of fruits
