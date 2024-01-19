@@ -1,0 +1,647 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    margin: 50px auto;
+}
+
+#fruit-image img {
+    max-width: 300px;
+}
+
+#img-container {
+    margin-top: 30px;
+    align-items: center;
+}
+
+#startBtn {
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 50px;
+    font-size:large;
+    background-color: #00ff00;
+    font-family: 'Bubblegum Sans';
+}
+#startBtn:hover{
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+}
+#score, #timer{
+    padding-bottom: 1px;
+    font-size: 28px;
+    color: #ff0000;
+    font-weight: bolder;
+}
+
+#option1,
+#option2,
+#option3 {
+    font-size: 24px; 
+    padding: 25px 30px ;
+    margin: 10px; 
+    border: 2px solid #333; 
+    background-color: #00ff00; 
+    color: #333; 
+    cursor: pointer;
+    font-family: 'Bubblegum Sans';
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin-top: 40px;
+}
+
+/* #option1:hover,
+#option2:hover,
+#option3:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+} */
+
+h1{
+
+    font-family: 'Bubblegum Sans';font-size: 40px;
+    align-items: center;
+    color: #fff;
+    margin-top: px;
+}
+
+
+h2{
+    color:#000000;
+    font-family: 'Bubblegum Sans';font-size: 50px;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: left;
+    padding-top: 20px;
+    
+}
+
+h5{
+    font-size: 38px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Bubblegum Sans';
+    
+}
+
+
+p {
+ text-align: left;
+ margin-left: 5px;
+ font-size: 30px;
+ color: #ffff;
+ padding-top: 5px;
+}
+.main-section {
+    background-color:#ffa500; 
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: xx-large;
+    font-family: sans-serif;
+   
+}
+
+section{
+    background-color: #00ff00;
+    padding: 20px;
+    font-size: x-large;
+    border: 2px solid black;
+}
+
+.instructions{
+    background-color: #ff0000;
+    font-family: 'Bubblegum Sans';
+
+}
+/* .instructions img{
+    float: left;
+    height: 400px;
+} */
+
+#name-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#startBtnn {
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 50px;
+    font-size: 28px;;
+    background-color: #00ff00;
+    font-family: 'Bubblegum Sans';
+}
+
+#startBtnn:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+#user-name {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#playAgainButton{
+
+    font-size: 24px; 
+    padding: 25px 30px ;
+    margin: 10px; 
+    border: 2px solid #333; 
+    background-color: #00ff00; 
+    color: #333; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-family: 'Bubblegum Sans';
+}
+#playAgainButton:hover{
+
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+
+}
+
+#playlevel1Again{
+    font-size: 24px; 
+    padding: 25px 30px ;
+    margin: 10px; 
+    border: 2px solid #333; 
+    background-color: #ff1500; 
+    color: #333; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-family: 'Bubblegum Sans';
+}
+
+#playlevel1Again:hover{
+
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+
+}
+
+
+#final-score{
+    padding-bottom: 1px;
+    font-size: 28px;
+    color: #ff0000;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#userName{
+    font-size: 24px; 
+    padding: 13px ;
+    margin: 10px; 
+    border: 2px solid #333; 
+}
+
+#user-name{
+    font-size: 24px;
+}
+
+#name-form{
+    font-size: 24px;
+}
+
+#label{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #game-container {
+        margin: 50px auto;
+    }
+    
+    #fruit-image img {
+        max-width: 300px;
+    }
+    
+    #img-container {
+        margin-top: 40px;
+        align-items: center;
+    }
+    
+    #startBtn {
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 60px;
+        font-size:large;
+        background-color: #00ff00;
+        font-family: 'Bubblegum Sans';
+    }
+    #startBtn:hover{
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    }
+    #score, #timer{
+        padding-bottom: 1px;
+        font-size: 20px;
+        color: #ff0000;
+        font-weight: bolder;
+    }
+    
+    #option1,
+    #option2,
+    #option3 {
+        font-size: 20px; 
+        padding: 25px 30px ;
+        margin: 10px; 
+        border: 2px solid #333; 
+        background-color: #00ff00; 
+        /* color: #333; 
+        cursor: pointer; */
+        font-family: 'Bubblegum Sans';
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        margin-top: 40px;
+    }
+    
+    /* #option1:hover,
+    #option2:hover,
+    #option3:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    } */
+    
+    h1{
+    
+        font-family: 'Bubblegum Sans';font-size: 40px;
+        align-items: center;
+        color: #080606;
+        margin-top: 20px;
+        font-size: 26px;
+    }
+    
+    
+    h2{
+        color:#d2c7c7;
+        font-family: 'Bubblegum Sans';font-size: 50px;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 45px;
+    }
+    
+    h3 {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 5px;
+        text-align: center;
+        padding-top: 25px;
+        
+    }
+    
+    h5{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 5px;
+        text-align: center;
+        padding-top: 25px;
+        font-family: 'Bubblegum Sans';
+        
+    }
+    
+    
+    p {
+     text-align: left;
+     margin-left: 2px;
+     font-size: 20px;
+     color: #f1ebeb;
+     padding-top: 10px;
+    }
+    .main-section {
+        background-color:#ffa500; 
+        padding: 50px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+        font-size: medium;
+        font-family: sans-serif;
+       
+    }
+    
+    section{
+        background-color: #00ff00;
+        padding: 20px;
+        font-size: x-large;
+        border: 2px solid black;
+    }
+    
+    .instructions{
+        background-color: #ff0000;
+        font-family: 'Bubblegum Sans';
+    
+    }
+    
+    
+    label {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    
+    #startBtnn {
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 30px;
+        font-size: 20px;;
+        background-color: #00ff00;
+        font-family: 'Bubblegum Sans';
+    }
+    
+    #startBtnn:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    }
+
+    
+    #playAgainButton{
+    
+        font-size: 10px; 
+        padding: 10px 20px ;
+        margin: 5px; 
+        border: 2px solid #333; 
+        background-color: #00ff00; 
+        color: #333; 
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        font-family: 'Bubblegum Sans';
+    }
+    #playAgainButton:hover{
+    
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    
+    }
+    
+    #playlevel1Again{
+        font-size: 20px; 
+        padding: 25px 30px ;
+        margin: 10px; 
+        border: 2px solid #333; 
+        background-color: #ff1500; 
+        color: #333; 
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        font-family: 'Bubblegum Sans';
+    }
+    
+    #playlevel1Again:hover{
+    
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    
+    }
+    
+    
+    #final-score{
+        padding-bottom: 1px;
+        font-size: 20px;
+        color: #ff0000;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    
+    #label{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:660px) {
+
+    #game-container {
+        margin: 50px auto;
+    }
+    
+    #fruit-image img {
+        width: 30px;
+
+    }
+    
+    #img-container {
+        margin-top: px;
+        align-items: center;
+    }
+    
+    #startBtn {
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 60px;
+        font-size:large;
+        background-color: #00ff00;
+        font-family: 'Bubblegum Sans';
+    }
+    #startBtn:hover{
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    }
+    #score, #timer{
+        padding-bottom: 1px;
+        font-size: 20px;
+        color: #ff0000;
+        font-weight: bolder;
+    }
+    
+    #option1,
+    #option2,
+    #option3 {
+        font-size: 20px; 
+        padding: 25px 30px ;
+        margin: 10px; 
+        border: 2px solid #333; 
+        background-color: #00ff00; 
+        /* color: #333; 
+        cursor: pointer; */
+        font-family: 'Bubblegum Sans';
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        margin-top: 40px;
+    }
+    
+    /* #option1:hover,
+    #option2:hover,
+    #option3:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    } */
+    
+    h1{
+    
+        font-family: 'Bubblegum Sans';font-size: 40px;
+        align-items: center;
+        color: #080606;
+        margin-top: 20px;
+        font-size: 26px;
+    }
+    
+    
+    h2{
+        color:#d2c7c7;
+        font-family: 'Bubblegum Sans';font-size: 50px;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 45px;
+    }
+    
+    h3 {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 5px;
+        text-align: center;
+        padding-top: 25px;
+        
+    }
+    
+    h5{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 5px;
+        text-align: center;
+        padding-top: 25px;
+        font-family: 'Bubblegum Sans';
+        
+    }
+    
+    
+    p {
+     text-align: left;
+     margin-left: 2px;
+     font-size: 25px;
+     color: #f1ebeb;
+     padding-top: 40px;
+    }
+    .main-section {
+        background-color:#ffa500; 
+        padding: 50px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+        font-size: medium;
+        font-family: sans-serif;
+       
+    }
+    
+    section{
+        background-color: #00ff00;
+        padding: 20px;
+        font-size: x-large;
+        border: 2px solid black;
+    }
+    
+    .instructions{
+        background-color: #ff0000;
+        font-family: 'Bubblegum Sans';
+    
+    }
+    
+    
+    label {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    
+    #startBtnn {
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 30px;
+        font-size: 20px;;
+        background-color: #00ff00;
+        font-family: 'Bubblegum Sans';
+    }
+    
+    #startBtnn:hover {
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    }
+
+    
+    #playAgainButton{
+    
+        font-size: 10px; 
+        padding: 10px 20px ;
+        margin: 5px; 
+        border: 2px solid #333; 
+        background-color: #00ff00; 
+        color: #333; 
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        font-family: 'Bubblegum Sans';
+    }
+    #playAgainButton:hover{
+    
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    
+    }
+    
+    #playlevel1Again{
+        font-size: 20px; 
+        padding: 25px 30px ;
+        margin: 10px; 
+        border: 2px solid #333; 
+        background-color: #ff1500; 
+        color: #333; 
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        font-family: 'Bubblegum Sans';
+    }
+    
+    #playlevel1Again:hover{
+    
+        background-color: #333;
+        color: #fff;
+        transform: scale(1.1);
+    
+    }
+    
+    
+    #final-score{
+        padding-bottom: 1px;
+        font-size: 20px;
+        color: #ff0000;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    
+    #label{
+        font-size: 20px;
+    }
+
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fruits Game</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,200;0,300;0,400;0,800;1,100;1,900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+       #img-instructions {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+           
+       }
+
+       #img-instructions img{
+        max-width: 100%;
+            height: auto;
+            margin: 0 5px;
+            padding: 10px;
+       }
+       
+    </style>
+</head>
+
+<body>
+    <section>
+        <section class="instructions">
+            <div id="img-instructions">
+                
+                <img src="images/cartoon3.png" style="width: 6%; height: 4%;">
+            <h2>
+            
+                "Fruity Feats & Veggie Ventures"
+            </h2>
+            
+            <img src="images/cartoon3.png" style="width: 6%; height: 4%;">
+        </div>
+        </section>
+    </section>
+    
+    <section class="main-section">
+        <div id="img-instructions">
+            <img src="images/cartoon4.png" style="width: 10%; height: 7%;">
+            <h1>READ THE INSTRUCTIONS CAREFULLY BEFORE YOU START!</h1>
+            <img src="images/cartoon4.png" style="width: 10%; height: 7%;">
+        </div>
+        
+        <button id="startBtnn" onclick="playGame()">PLAY GAME</button>
+       
+    </section>
+
+    <section>
+        <section class="instructions">
+            <h3>GAME INSTRUCTIONS</h3>
+            <p>Your challenge: Guess the initial letter of displayed fruits within 15 seconds.</p>
+            <p>Earn one point for each correct answer.</p>
+            <p>Submit your guess before the timer runs out.</p>
+            <p>Enjoy the fruity fun and aim for many correct guesses.</p>
+
+        </section>
+    </section>
+
+    <script src="jquery/jquery-3.2.1.js"></script>
+    <script src="jq/jqueryUI/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fruits Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,200;0,300;0,400;0,800;1,100;1,900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+    <section>
+        <section class="instructions">
+            <h2>
+        
+                "GUESSS THE INITIAL OF THE VEGETABLES!"
+            </h2>
+        
+        </section>
+    </section>
+    <section class="main-section">
+        <div id="img-container">
+            <img id="fruit-img" src="images/wsad.webp" alt="mix-fruit">
+        </div>
+        
+        <button id="startBtn">START LEVEL 2</button>
+        <p id="score">Score: <span id="scoreVal">0 </span></p>
+        <p id="timer">Timer: <span id="timer">15</span></p>
+
+        <audio id="audio-element">
+            <source src="audio/point_scored.mp3" type="audio/mpeg">
+          </audio>
+
+        
+        <div id="options">
+            <button id="option1" display="none"></button>
+            <button id="option2" display="none"></button>
+            <button id="option3" display="none"></button>
+
+        </div>
+
+        
+    </section>
+
+    <script src="jquery/jquery-3.2.1.js"></script>
+    <script src="jq/jqueryUI/jquery-ui.min.js"></script>
+    <script src="js/level2.js"></script>
+</body>
+
+</html>  
