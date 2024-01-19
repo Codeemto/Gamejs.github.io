@@ -93,7 +93,7 @@ function finishQuiz() {
     localStorage.setItem('finalScore', score);
 
     timerElement.style.display = "none";
-    window.location.href = "http://127.0.0.1:5503/finalscores.html";
+    window.location.href = "https://codeemto.github.io/Gamejs.github.io//finalscores.html";
 }
 
 //function to display the question and start the timer
