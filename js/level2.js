@@ -14,7 +14,7 @@ $("#btn").on("click", function () {
 
 //function to redirect to the levels page when the game starts
 function playGame() {
-    window.location.href = "https://codeemto.github.io/Gamejs.github.io/levels.html";
+    window.location.href = "http://127.0.0.1:5503/levels.html";
 }
 
 //array of fruits
@@ -41,20 +41,29 @@ var scoreElement = document.getElementById("scoreVal");
 var startButton = document.getElementById("startBtn");
 var timerElement = document.getElementById("timer");
 
-//function to shuffle an array
-function shuffleArray(array) {
-    var currentIndex = array.length, randomIndex, temporaryValue;
+// Shuffle an array and ensure the correct answer is included
+function shuffleArrayWithCorrectAnswer(array, correctAnswer) {
+    var shuffledArray = array.slice(); // Create a copy of the original array
+
+    // Ensure correct answer is in the shuffled array
+    if (!shuffledArray.includes(correctAnswer)) {
+        var randomIndex = Math.floor(Math.random() * shuffledArray.length);
+        shuffledArray[randomIndex] = correctAnswer;
+    }
+
+    // Perform Fisher-Yates shuffle for the rest of the elements
+    var currentIndex = shuffledArray.length, temporaryValue, randomIndex;
 
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
 
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
+        temporaryValue = shuffledArray[currentIndex];
+        shuffledArray[currentIndex] = shuffledArray[randomIndex];
+        shuffledArray[randomIndex] = temporaryValue;
     }
 
-    return array;
+    return shuffledArray;
 }
 
 //function to load a new question
@@ -63,8 +72,8 @@ function loadQuestion() {
     if (currentQuestion < fruits.length) {
         var fruit = fruits[currentQuestion];
 
-        // Shuffle the options array
-        var shuffledOptions = shuffleArray(fruit.options);
+        // Shuffle the options array with correct answer
+        var shuffledOptions = shuffleArrayWithCorrectAnswer(fruit.options, fruit.options[0]);
 
         //to set the fruit image and shuffled options
         fruitImage.src = "images/" + fruit.image;
@@ -84,7 +93,7 @@ function finishQuiz() {
     localStorage.setItem('finalScore', score);
 
     timerElement.style.display = "none";
-    window.location.href = "https://codeemto.github.io/Gamejs.github.io/finalscores\.html";
+    window.location.href = "http://127.0.0.1:5503/finalscores.html";
 }
 
 //function to display the question and start the timer
