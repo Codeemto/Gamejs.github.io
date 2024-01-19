@@ -14,7 +14,7 @@ function playAgain() {
     score = 0;
     gameStarted = false;
 
-    window.location.href = "http://127.0.0.1:5503/index.html";
+    window.location.href = "https://codeemto.github.io//index.html";
 }
 function playlevel1Again(){
 
