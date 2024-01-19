@@ -18,6 +18,6 @@ function playAgain() {
 }
 function playlevel1Again(){
 
-    window.location.href = "http://127.0.0.1:5503/level2.html";
+    window.location.href = "https://codeemto.github.io/level2.html";
 
 }
