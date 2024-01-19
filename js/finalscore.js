@@ -14,10 +14,10 @@ function playAgain() {
     score = 0;
     gameStarted = false;
 
-    window.location.href = "https://codeemto.github.io//index.html";
+    window.location.href = "https://codeemto.github.io/Gamejs.github.io/index.html";
 }
 function playlevel1Again(){
 
-    window.location.href = "https://codeemto.github.io/level2.html";
+    window.location.href = "https://codeemto.github.io/Gamejs.github.io/level2.html";
 
 }
