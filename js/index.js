@@ -14,7 +14,7 @@ $("#btn").on("click", function () {
 
 //function to redirect to the levels page when the game starts
 function playGame() {
-    window.location.href = "https://codeemto.github.io/levels.html";
+    window.location.href = "https://codeemto.github.io/Gamejs.github.io/levels.html";
 }
 
 //array of fruits
@@ -94,7 +94,7 @@ function finishQuiz() {
     localStorage.setItem('finalScore', score);
 
     timerElement.style.display = "none";
-    window.location.href = "https://codeemto.github.io/finalscore.html";
+    window.location.href = "https://codeemto.github.io/Gamejs.github.io/finalscore.html";
 }
 
 //function to display the question and start the timer
